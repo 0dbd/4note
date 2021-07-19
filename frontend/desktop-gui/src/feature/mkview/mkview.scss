@@ -1,0 +1,45 @@
+$font-mkview: Helvetica, sans-serif;
+$background-color: #333;
+
+body { 
+    font: 100% $font-mkview;
+    color: $background-color;
+}
+
+
+.container {
+    background-color: #ffe1e1;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    //  align-content: space-between;
+}
+
+.line {
+    flex-basis: 100%;
+    // flex-grow: 1;
+    // align-self: stretch;
+    // background-color: #ce8888;
+}
+
+.select {
+    background-color: #777;
+}
+
+.editor { 
+    resize: both;
+    overflow: auto;
+    // cursor: text;
+    cursor: pointer;
+
+}
+.editor a{ 
+    cursor: pointer;
+    
+}
+
+.blink-background {
+    animation: blink .5s step-end infinite alternate
+}
